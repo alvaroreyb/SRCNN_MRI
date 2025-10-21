@@ -117,11 +117,12 @@ Reducción del tiempo de carga entre batches de entrenamiento (~15–20%).
 El módulo Telegram.py permite enviar resultados automáticamente a través de un bot de Telegram.
 
 Ejemplo de uso:
-python
- 
+
+```
 from Telegram import TelegramResults
 
-bot = TelegramResults("Entrenamiento completado con PSNR=37.8, SSIM=0.96")
+bot = TelegramResults("Message")
+```
 💾 Resultados y Checkpoints
 Archivo	Descripción
 best.pth.tar	Mejor modelo guardado según PSNR/SSIM.
@@ -131,9 +132,9 @@ results/test/	Imágenes SR generadas por el modelo.
 
 Visualiza los logs con:
 
-  
-
+```
 tensorboard --logdir=logs/
+```
 📊 Métricas Implementadas
 PSNR (Peak Signal-to-Noise Ratio): Evalúa la calidad de reconstrucción respecto a la imagen HR.
 
@@ -145,9 +146,9 @@ Ambas métricas se calculan automáticamente durante la validación y test.
 Desarrollado por:
 Álvaro Rey Blanes
 🎓 Ingeniería Biomédica y Software — Universidad de Málaga
-📅 Trabajo Fin de Grado (2025):
+📅 Trabajo Fin de Grado (2024):
 
-“Reconstrucción de Imágenes de Resonancia Magnética mediante Modelos de Super-Resolución Profunda”
+“Reconstrucción de Imágenes de Resonancia Magnética mediante Modelos de Super-Resolución”
 
 📧 Contacto: [alvaroreyb@alvaroreyb.es]
 
