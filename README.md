@@ -101,7 +101,7 @@ Comparativa entre entrada, verdad de terreno (HR) y salida reconstruida (SR):
 
 | LR (Entrada) | HR (Imagen Alta Calidad) | SR (Reconstrucción) |
 |---------------|------------------------|----------------------|
-| ![LR](results/exp1/lr.png) | ![HR](results/exp1/hr.png) | ![SR](results/exp1/sr.png) |
+| ![LR](results/exp1/LR.png) | ![HR](results/exp1/HR.png) | ![SR](results/exp1/SR.png) |
 
 
 ⚡ Optimización con Prefetch
