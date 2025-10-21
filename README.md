@@ -69,27 +69,34 @@ El flujo principal del sistema se compone de los siguientes módulos:
 
 ```  
 python train.py
+```
 Los resultados se guardan en:
 
   
  
-./results/<expname>/
-junto a los logs de TensorBoard.
+./results/<expname>/ junto a los logs de TensorBoard.
 
 🧪 Evaluación y Métricas
 El proceso de testeo (test.py) genera imágenes reconstruidas (SR) a partir de las versiones degradadas (LR) y evalúa su calidad.
 
 Ejecución:
   
- 
+```
 python test.py
+```
+Las imágenes reconstruidas se almacenan en: ./results/test/<expname>
 
-Las imágenes reconstruidas se almacenan en:
-
+La clase de inferencia (inference.py) genera imágenes reconstruidas (SR) a partir de la version de baja calidad, sea degradada u original de baja calidad (LR)
+Ejecución:
   
- 
-./results/test/<expname>/
+```
+python inferenceSR.py
+```
+
+
 🖼️ Ejemplos Visuales
+
+
 Comparativa entre entrada, verdad de terreno (HR) y salida reconstruida (SR):
 
 | LR (Entrada) | HR (Imagen Alta Calidad) | SR (Reconstrucción) |
@@ -137,12 +144,12 @@ Ambas métricas se calculan automáticamente durante la validación y test.
 🧍 Autor
 Desarrollado por:
 Álvaro Rey Blanes
-🎓 Ingeniería Biomédica y Software — Universidad Rey Juan Carlos
+🎓 Ingeniería Biomédica y Software — Universidad de Málaga
 📅 Trabajo Fin de Grado (2025):
 
 “Reconstrucción de Imágenes de Resonancia Magnética mediante Modelos de Super-Resolución Profunda”
 
-📧 Contacto: [tuemail@ejemplo.com]
+📧 Contacto: [alvaroreyb@alvaroreyb.es]
 
 🪪 Licencia
 Este proyecto está licenciado bajo MIT License.
